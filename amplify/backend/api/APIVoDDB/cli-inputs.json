@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/video/{id}": {
+      "name": "/video/{id}",
+      "lambdaFunction": "videoFunction",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
