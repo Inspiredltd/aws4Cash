@@ -1,0 +1,35 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-4cashampproj-dev-183027-authRole",
+      "UnauthRoleArn": "arn:aws:iam::841240955468:role/amplify-4cashampproj-dev-183027-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::841240955468:role/amplify-4cashampproj-dev-183027-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-4cashampproj-dev-183027-deployment",
+      "UnauthRoleName": "amplify-4cashampproj-dev-183027-unauthRole",
+      "StackName": "amplify-4cashampproj-dev-183027",
+      "StackId": "arn:aws:cloudformation:eu-north-1:841240955468:stack/amplify-4cashampproj-dev-183027/b6b143b0-8709-11ee-af5c-0e54438f2f36",
+      "AmplifyAppId": "d6tiqqnucem8q"
+    },
+    "categories": {
+      "storage": {
+        "FourCashVoD": {
+          "tableName": "FourCashVoD",
+          "region": "eu-north-1",
+          "arn": "arn:aws:dynamodb:eu-north-1:841240955468:table/FourCashVoD",
+          "partitionKeyName": "guid",
+          "partitionKeyType": "S"
+        }
+      },
+      "function": {
+        "videoFunction": {
+          "deploymentBucketName": "amplify-4cashampproj-dev-183027-deployment",
+          "s3Key": "amplify-builds/videoFunction-424649494d674736742f-build.zip"
+        }
+      },
+      "api": {
+        "APIVoDDB": {}
+      }
+    }
+  }
+}

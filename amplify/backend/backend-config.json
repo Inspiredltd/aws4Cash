@@ -1,0 +1,91 @@
+{
+  "api": {
+    "APIVoDDB": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "videoFunction"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "videoFunction": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_videoFunction_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "videoFunction"
+        }
+      ]
+    },
+    "AMPLIFY_function_videoFunction_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "videoFunction"
+        }
+      ]
+    },
+    "AMPLIFY_storage_FourCashVoD_arn": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "FourCashVoD"
+        }
+      ]
+    },
+    "AMPLIFY_storage_FourCashVoD_partitionKeyName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "FourCashVoD"
+        }
+      ]
+    },
+    "AMPLIFY_storage_FourCashVoD_partitionKeyType": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "FourCashVoD"
+        }
+      ]
+    },
+    "AMPLIFY_storage_FourCashVoD_region": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "FourCashVoD"
+        }
+      ]
+    },
+    "AMPLIFY_storage_FourCashVoD_tableName": {
+      "usedBy": [
+        {
+          "category": "storage",
+          "resourceName": "FourCashVoD"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "FourCashVoD": {
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB",
+      "serviceType": "imported"
+    }
+  }
+}
